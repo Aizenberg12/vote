@@ -37,6 +37,9 @@
     "webpack-manifest-plugin": "^1.2.1",
     "webpack-merge": "^4.1.0"
   },
+  "engines": {
+    "node": "6.11.1"
+  },
   "devDependencies": {
     "webpack-dev-server": "^2.6.1"
   }
