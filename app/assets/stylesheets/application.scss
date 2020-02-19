@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+@import "normalize-rails";
+@import "bourbon";
+
+@import "application/mixins/index";
+
+@import "application/base/base";
+@import "application/components/index";
+@import "application/pages/pages";

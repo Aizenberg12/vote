@@ -1,0 +1,29 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.sticky-wrapper {
+  min-height: 100%;
+  margin-bottom: -103px;
+
+  &:after {
+    content: "";
+    height: 103px;
+    display: block;
+  }
+}
+
+.footer {
+  height: 103px;
+}

@@ -1,0 +1,12 @@
+header.header
+  = link_to root_path, class: 'header__logo' do
+    = image_tag("logo.png")
+    h1.header__title Система анкетирования ЮФУ
+
+  .header__menu
+    = link_to "Главная", root_path, class: 'header__menu-item'
+    = link_to "О сервисе", page_path('about'), class: 'header__menu-item'
+    - if current_user.present?
+      = link_to "Выход", destroy_user_session_path, class: 'header__menu-item'
+    .header__sidebar-trigger
+      img.open-sidebar src=(image_path('menu.svg'))
