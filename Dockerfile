@@ -31,6 +31,7 @@ ENV APPLICATION_HOST $APPLICATION_HOST
 COPY . ./
 
 RUN yarn install --production=false
+RUN gem install bundler --no-ri --no-rdoc
 RUN ./bin/webpack
 
 EXPOSE 3000
